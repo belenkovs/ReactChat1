@@ -1,11 +1,13 @@
 import React from "react";
 import MyContext from '../myContext/myContext';
+import MessageItem from '../messageItem/messageItem'
 
 const MessageList = () => {
 
 	return (
 		<ul>
-			<li>1</li>
+			<MessageItem/>
+			<MessageItem/>
 		</ul>
 	)
 }

@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import MyContext  from "../myContext/myContext";
 import InfoPanel from "../infoPanel/infoPanel";
+import MessageList from "../messageList/messageList";
 
 function App() {
 	  return (    
@@ -14,6 +15,7 @@ function App() {
 				}}>
 				<h1>Hi</h1>
 				<InfoPanel/>
+				<MessageList/>
 
 			</MyContext.Provider>
 
