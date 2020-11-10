@@ -1,24 +1,17 @@
 import React from "react";
+import AppHeader from '../app-header';
+import {MainPage} from '../pages';
 
-import "./App.css";
-import MyContext  from "../myContext/myContext";
-import InfoPanel from "../infoPanel/infoPanel";
-import MessageList from "../messageList/messageList";
+import {Route,Switch} from 'react-router-dom'
 
 function App() {
 	  return (    
 		<div className="App">
-
-			<MyContext.Provider value={{
-				name : 'ivan',
-				age : 30
-				}}>
-				<h1>Hi</h1>
-				<InfoPanel/>
-				<MessageList/>
-
-			</MyContext.Provider>
-
+			<AppHeader total={50}/>
+            <Switch>
+                <Route path='/' exact component={MainPage}/>
+                <Route exact component={MainPage}/>
+            </Switch>
 		</div>
 
 	);
