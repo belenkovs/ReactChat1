@@ -1,5 +1,5 @@
 import React from 'react';
-import ChatServiceContext from '../cahat-service-context';
+import ChatServiceContext from '../chat-service-context';
 
 const WithChatService = () => {
     return (Wrapped) => {

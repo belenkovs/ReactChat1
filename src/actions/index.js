@@ -15,3 +15,11 @@ const messageError=()=>{
 	return {
 		type:'MESSAGE_ERROR'}
 }
+
+
+export {
+	messageLoaded,
+	messageRequested,
+	messageError
+
+}

@@ -1,13 +1,13 @@
-const initialState ={
-	messages:[],
-	loading:true,
-	error:false,
-	newpost:[],
-	currentUser:[],
-	userlist:[]
+const initialState = {
+	messages : [],
+	loading : true,
+	error : false,
+	newpost : [],
+	currentUser : [],
+	userlist : []
 }
 
-const reducer =(state=initialState,action)=>{
+const reducer =(state = initialState,action)=>{
 	console.log(state);
 	switch(action.type){
 		case 'MESSAGE_LOADED':
@@ -34,6 +34,8 @@ const reducer =(state=initialState,action)=>{
 				error:false,
 		};		
 	
+		default:
+			return state;
 
 	}
 

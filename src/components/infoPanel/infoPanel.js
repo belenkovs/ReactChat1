@@ -5,7 +5,7 @@ const InfoPanel =() => {
 	return  (
 
 						<div className="name">
-							myName is {value.name}, age {value.age}
+							myName is Test
 						</div>
 
 	)

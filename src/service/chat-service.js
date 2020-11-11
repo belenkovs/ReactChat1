@@ -1,5 +1,5 @@
 export  default class ChatService{
-	_apiBase = 'http://localhost:3000'
+	_apiBase = 'http://test14.ru'
 	
 	async getResource(url) {
 		const res =await fetch(`${this._apiBase}${url}`);
