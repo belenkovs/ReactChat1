@@ -1,10 +1,13 @@
 import React from 'react';
+import MessageList from '../messageList';
+import SendPanel from '../sendPanel';
 
 const MainPage = () => {
     return (
-        <div>
-			hi
-		</div>
+        <>
+			<MessageList/>
+            <SendPanel/>
+        </>
     )
 }
 

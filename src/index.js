@@ -10,6 +10,8 @@ import ErrorBoundry from './components/error-boundry';
 import ChatService from './service/chat-service';
 import ChatServiceContext from './components/chat-service-context'
 import store from './store';
+import 'bootstrap/dist/css/bootstrap.css'; 
+
 
 const chatService = new ChatService;
 

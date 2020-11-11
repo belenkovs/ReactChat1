@@ -1,1 +1,1 @@
-npm start y
+start npm start /y
