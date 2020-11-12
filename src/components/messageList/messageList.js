@@ -29,13 +29,18 @@ class MessageList extends Component {
 
         if (loading){
             return <Spinner/>
-        }
-
-
+		}
+		
 		return (
 			<Container fluid >
-				<MessageItem/>
-				<MessageItem/>
+				{
+					messages.map(messageItem=>{
+						return <MessageItem 
+							key={messageItem.id}
+								messageItem={messageItem}
+								/>
+					})
+				}
 			</Container>
 		)
 	

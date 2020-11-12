@@ -2,9 +2,10 @@ const initialState = {
 	messages : [],
 	loading : true,
 	error : false,
-	newpost : [],
 	currentUser : [],
-	userlist : []
+	userlist : [],
+	newMessage: [],
+	lastMessage:0
 }
 
 const reducer =(state = initialState,action)=>{
@@ -33,6 +34,19 @@ const reducer =(state = initialState,action)=>{
 				loading:true,
 				error:false,
 		};		
+		case 'MESSAGE_SEND':
+			preventDefault();
+
+			return {
+				...state,
+				newMessage:action.newMessage,
+		};		
+		case 'MESSAGE_EDIT':
+			return {
+				...state,
+				newMessage:action.newMessage,
+		};		
+		
 	
 		default:
 			return state;

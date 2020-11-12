@@ -19,4 +19,7 @@ export  default class ChatService{
 		console.log(message);
 	}
 
+
+	on
+
 }

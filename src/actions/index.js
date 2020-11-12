@@ -1,7 +1,7 @@
-const messageLoaded =(newMessage) =>{
+const messageLoaded =(messages) =>{
 	return {
 		type: 'MESSAGE_LOADED',
-		payload:newMessage
+		payload:messages
 	};
 };
 
@@ -17,9 +17,27 @@ const messageError=()=>{
 }
 
 
+const messageSend =(newMessage) =>{
+	console.log('reduser messageSend')
+	return {
+		type: 'MESSAGE_SEND',
+		payload:newMessage
+	};
+};
+
+const messageEdit =(newMessage) =>{
+	return {
+		type: 'MESSAGE_EDIT',
+		payload:newMessage
+	};
+};
+
+
 export {
 	messageLoaded,
 	messageRequested,
-	messageError
+	messageError,
+	messageSend,
+	messageEdit
 
 }
